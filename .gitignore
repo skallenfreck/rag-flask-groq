@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# RAG - Base vectorial local
+storage/chroma/
+
+# Modelos y caché local
+.cache/
+huggingface_cache/
