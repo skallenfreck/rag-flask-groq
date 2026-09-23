@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic AI</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- Luces decorativas del fondo -->
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+
+    <main class="app">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <h1>Academic AI</h1>
+
+                    <p>
+                        Asistente del Reglamento Académico
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                Sistema activo
+
+            </div>
+
+        </header>
+
+
+        <!-- CHAT -->
+
+        <section class="chat glass">
+
+            <div id="messages" class="messages">
+
+                <!-- Mensaje inicial -->
+
+                <div class="message assistant">
+
+                    <div class="avatar">
+                        AI
+                    </div>
+
+                    <div class="message-body">
+
+                        <div class="message-name">
+                            Academic AI
+                        </div>
+
+                        <div class="message-content">
+
+                            Hola 👋
+
+                            <br><br>
+
+                            Soy tu asistente académico. Puedo ayudarte
+                            a consultar el <strong>Reglamento Académico
+                            Institucional</strong>.
+
+                            <br><br>
+
+                            Hazme una pregunta para comenzar.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT -->
+
+            <div class="input-area">
+
+                <form id="question-form">
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="text"
+                            id="question"
+                            placeholder="Pregunta algo sobre el reglamento..."
+                            autocomplete="off"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            id="send-button"
+                        >
+                            <span>➤</span>
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <p class="disclaimer">
+                    Las respuestas se generan utilizando la información
+                    disponible en la base documental.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>RAG + Groq + ChromaDB</span>
+
+            <span>•</span>
+
+            <span>Asistente Académico</span>
+
+        </footer>
+
+    </main>
+
+
+    <script
+        src="{{ url_for('static', filename='js/app.js') }}">
+    </script>
+
+</body>
+
+</html>
