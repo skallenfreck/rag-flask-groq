@@ -9,4 +9,5 @@ langchain-groq
 sentence-transformers
 chromadb
 pypdf
-cryptographygunicorn
+cryptography
+gunicorn
